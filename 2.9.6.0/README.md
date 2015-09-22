@@ -1,7 +1,7 @@
 ## Description ##
 
-This Dockerfile is designed to work with dockerIDSEngines available at https://bitbucket.org/decodedtechsolutions/dockeridsengines
-It also functions as a standalone instance.  Feel free to `docker run -it decodedtechsolutions/docker-snort-2.9.6.0 /bin/bash`  
+This Dockerfile is designed to work with dockerIDSEngines available at https://www.github.com/zoomequipd/dockeridsengines   
+It also functions as a standalone instance.  Feel free to `docker run -it zoomequipd/docker-snort:2.9.6.0 /bin/bash`  
 If running as a stand alone instance, there are no rules or configuration provided.  
 
 This installs snort 2.9.6.0 and some specific version of snort dependencies 

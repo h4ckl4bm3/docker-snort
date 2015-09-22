@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Brandon Murphy <brandon@decodedTechSolutions.com>
+MAINTAINER Brandon Murphy <github@zoomequipd.com>
 
 # Install depends
 RUN apt-get update && apt-get install -y --no-install-recommends \
