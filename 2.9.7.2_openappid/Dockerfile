@@ -25,7 +25,7 @@ RUN cd /usr/local/src/ && tar zxf LuaJIT-2.0.3.tar.gz && cd LuaJIT-2.0.3 && make
 RUN cd /usr/local/src/ && tar zxf daq-2.0.4.tar.gz && cd daq-2.0.4 && ./configure --disable-ipfw-module --disable-nfq-module --disable-ipq-module ; make ; make install
 
 # Compile Snort
-RUN cd /usr/local/src/ && tar zxf snort-2.9.7.2.tar.gz && cd snort-2.9.7.2 && ./configure --enable-control-socket --enable-sourcefire --enable-large-pcap --enable-zlib --enable-open-appid ; make ; make install
+RUN cd /usr/local/src/ && tar zxf snort-2.9.7.2.tar.gz && cd snort-2.9.7.2 && ./configure --enable-control-socket --enable-sourcefire --enable-large-pcap --enable-zlib --enable-open-appid --enable-perfprofiling ; make ; make install
 
 RUN ldconfig
 RUN ln -s /usr/local/lib/libdnet.1.0.1 /usr/lib/libdnet.1
