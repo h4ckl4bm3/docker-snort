@@ -23,7 +23,7 @@ RUN cd /usr/local/src/ && tar zxf pcre-8.34.tar.gz && cd pcre-8.34 && ./configur
 RUN cd /usr/local/src/ && tar zxf daq-2.0.2.tar.gz && cd daq-2.0.2 && ./configure --disable-ipfw-module --disable-nfq-module --disable-ipq-module ; make ; make install
 
 # Compile Snort
-RUN cd /usr/local/src/ && tar zxf snort-2.9.6.0.tar.gz  && cd snort-2.9.6.0 && ./configure --enable-control-socket --enable-sourcefire --enable-large-pcap --enable-zlib ; make ; make install
+RUN cd /usr/local/src/ && tar zxf snort-2.9.6.0.tar.gz  && cd snort-2.9.6.0 && ./configure --enable-control-socket --enable-sourcefire --enable-large-pcap --enable-zlib --enable-perfprofiling ; make ; make install
 
 RUN ldconfig
 RUN ln -s /usr/local/lib/libdnet.1.0.1 /usr/lib/libdnet.1
